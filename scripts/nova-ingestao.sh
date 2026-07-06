@@ -14,6 +14,18 @@ if [[ -z "$DATA" ]]; then read -rp "Data (AAAA-MM-DD): " DATA; fi
 if [[ -z "$PARTICIPANTES" ]]; then read -rp "Participantes (slug, ex.: call-leandro): " PARTICIPANTES; fi
 if [[ -z "$ASSUNTO" ]]; then read -rp "Assunto (slug, ex.: alinhamento-pdca): " ASSUNTO; fi
 
+if [[ ! "$DATA" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+  echo "Data invalida. Use AAAA-MM-DD." >&2
+  exit 1
+fi
+
+for valor in "$PARTICIPANTES" "$ASSUNTO"; do
+  if [[ ! "$valor" =~ ^[a-z0-9]+([_-][a-z0-9]+)*$ ]]; then
+    echo "Slug invalido: use apenas letras minusculas, numeros, hifen e underscore." >&2
+    exit 1
+  fi
+done
+
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 DEST="$ROOT/projeto/transcricoes"
 mkdir -p "$DEST"
