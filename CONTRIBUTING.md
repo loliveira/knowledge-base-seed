@@ -13,9 +13,10 @@ evita branches empilhadas e conflitos. Se precisa só do fluxo de Git, veja o
 3. editar ou criar Markdown
 4. manter o frontmatter (ver schema abaixo)
 5. atualizar os links `related` afetados
-6. abrir PR com resumo claro — **sem merge próprio**
-7. pedir revisão e incorporar feedback
-8. merge apenas após aprovação de quem mantém
+6. executar `python3 scripts/audit-kb.py`
+7. abrir PR com resumo claro — **sem merge próprio**
+8. pedir revisão e incorporar feedback
+9. merge apenas após aprovação de quem mantém
 
 ## Frontmatter
 

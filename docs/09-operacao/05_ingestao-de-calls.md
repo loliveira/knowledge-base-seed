@@ -17,9 +17,12 @@ distribuindo os insights.
 
 ## Passos
 
-1. **Crie o par de arquivos** com [`scripts/nova-ingestao.sh`](../../scripts/nova-ingestao.sh):
-   um `*_transcricao-bruta.md` e um `*_notas-e-decisoes.md` em `projeto/transcricoes/`.
-2. **Cole a transcrição** no arquivo bruto.
+1. **Identifique a fonte e a sensibilidade.** Registre onde a gravação/transcrição está, quem
+   pode acessá-la e se há consentimento para circulação ou publicação.
+2. **Crie o par de arquivos quando o bruto puder ser versionado** com
+   [`scripts/nova-ingestao.sh`](../../scripts/nova-ingestao.sh): um
+   `*_transcricao-bruta.md` e um `*_notas-e-decisoes.md`. Se o bruto for longo ou sensível,
+   mantenha-o fora do Git e crie apenas a nota de intake com um ponteiro seguro.
 3. **Faça higiene da transcrição.** Corrija termos que a transcrição automática errou (ex.:
    "Rio Chart" → "Hill Chart"). Descreva correções relevantes na nota derivada.
 4. **Preencha a nota derivada**, classificando cada item como **fato**, **decisão**,
@@ -33,11 +36,36 @@ distribuindo os insights.
    [separação de camadas](02_separacao-de-camadas.md)).
 9. **Registre no log** o que mudou; crie **handoff** se o trabalho continua.
 
+Se a call interessa a mais de uma base, escolha **uma fonte de verdade** para o intake
+completo. As outras recebem ponteiros e apenas o conhecimento que pertence ao território
+canônico delas. Veja [interoperabilidade entre bases](06_interoperabilidade-entre-bases.md).
+
 ## Onde fica o quê
 
 - **intake** (contexto, síntese, ponteiros) → `projeto/transcricoes/`
 - **insights** → distribuídos para as páginas de projeto/pessoa/conceito
 - **transcrição bruta longa ou sensível** → fora do Git (ex.: Drive), referenciada por link
+
+## Metadados recomendados para o intake
+
+```yaml
+---
+id: call-AAAA-MM-DD-assunto
+type: call-intake
+status: reviewed
+privacy: restricted
+availability: repo-private
+participants: []
+source_refs: []
+distribution_targets: []
+decisions: []
+open_questions: []
+publication_consent: unknown # unknown | granted | denied | partial
+---
+```
+
+Não registre tokens ou URLs com credenciais embutidas. Um link compartilhável pode ser uma
+capacidade de acesso e deve seguir a [política de segurança](../../.github/SECURITY.md).
 
 ## Princípio
 

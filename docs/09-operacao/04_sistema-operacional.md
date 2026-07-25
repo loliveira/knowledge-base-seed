@@ -57,6 +57,7 @@ Antes de concluir uma rodada de trabalho:
 
 - verificar links e alterações pendentes;
 - atualizar itens do backlog;
+- atualizar `STATE.md` quando direção, gate, risco ou estado de frente mudou;
 - registrar o resultado no log do dia;
 - deixar handoff com estado, decisões, pendências e próximo movimento;
 - abrir PR com escopo e validação explícitos.

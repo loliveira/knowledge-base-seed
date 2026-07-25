@@ -22,11 +22,8 @@ O funcionamento está descrito no
 
 ## Estado atual
 
-> Mantenha esta seção atualizada — é a primeira coisa que um agente lê.
-
-- <o que está acontecendo agora>
-- <próxima conversa/marco estruturante>
-- <decisão vigente que limita o escopo>
+O estado transversal vive no [`STATE.md`](../STATE.md). Esta pasta guarda o detalhe
+operacional: fila, decisões, logs, handoffs e materiais de entrada.
 
 ## Regra de ouro
 

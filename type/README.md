@@ -23,6 +23,12 @@ nota.
 | `log` | registro cronológico |
 | `glossary` | léxico de termos |
 | `schema` | a própria convenção de metadados |
+| `state` | fotografia operacional curta: situação, próximo gate, riscos e lacunas |
+| `source` | fonte original ou primária, sem promoção automática a fato |
+| `call-intake` | registro de entrada e distribuição de uma call |
+| `event` | algo observado ou capturado, ainda não promovido a conteúdo canônico |
+| `context-packet` | pacote mínimo de contexto enviado entre bases |
+| `handoff` | estado suficiente para outra pessoa ou agente continuar |
 
 ## Como usar
 

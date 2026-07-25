@@ -8,6 +8,7 @@ related:
   - 01_tese.md
   - 02_lexico.md
   - ../09-operacao/00_schema.md
+  - ../../STATE.md
 ---
 
 # Mapa da <NOME DA KB>
@@ -39,6 +40,7 @@ related:
 ## Ordem de leitura sugerida
 
 1. Este mapa
-2. [Tese](01_tese.md)
-3. [Léxico](02_lexico.md)
-4. [Entidades](03_entidades.md)
+2. [Estado atual](../../STATE.md)
+3. [Tese](01_tese.md)
+4. [Léxico](02_lexico.md)
+5. [Entidades](03_entidades.md)

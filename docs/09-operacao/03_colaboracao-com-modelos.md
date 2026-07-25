@@ -45,3 +45,7 @@ Mantenha abaixo a lista de agentes que interagem com esta KB e como.
 
 As regras detalhadas (ordem de leitura, hierarquia de confiança, saída mínima de uma
 ingestão) vivem no [AGENTS.md](../../AGENTS.md) na raiz do repo.
+
+Cada sessão usa um ritual leve de **check-in e checkout**. O agente começa pelo estado e
+fontes canônicas; termina atualizando destinos, estado, log/handoff e deixando uma PR
+revisável. O objetivo é permitir continuidade sem depender da memória do chat anterior.
