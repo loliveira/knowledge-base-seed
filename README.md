@@ -26,6 +26,16 @@ Leia, nesta ordem, a pasta **[docs/00-comece-aqui](docs/00-comece-aqui/)**:
 
 Se você é um **agente** (Claude, Codex, etc.), comece por **[AGENTS.md](AGENTS.md)**.
 
+## Três níveis de adoção
+
+Não é preciso ativar o sistema inteiro no primeiro dia:
+
+1. **Constituir:** responda as perguntas, escreva mapa e tese, crie uma área de conteúdo e a
+   primeira nota.
+2. **Operar:** mantenha [`STATE.md`](STATE.md), backlog, decisões, logs, calls e handoffs.
+3. **Conectar:** declare fontes canônicas e use o protocolo de interoperabilidade quando a KB
+   conversar com outras bases ou sistemas.
+
 ## Estrutura
 
 ```text
@@ -37,10 +47,18 @@ docs/
 views/              trilhas de leitura por público (≠ estrutura de pastas)
 type/               tipos de nota como lente de navegação
 projeto/            "SO de projeto": inbox → nota → decisão → backlog → log → handoff (opcional)
-scripts/            utilitários (ex.: criar par de arquivos de ingestão de call)
+scripts/            utilitários para ingestão e auditoria leve da KB
+STATE.md            estado atual, próximo gate, riscos e frentes sem movimento
 AGENTS.md           instruções para agentes de IA
 CONTRIBUTING.md     fluxo de contribuição (PR-only)
 ```
+
+O [`STATE.md`](STATE.md) é a leitura operacional curta. O mapa explica **o que a base é**; o
+estado registra **onde ela está agora**.
+
+Antes de abrir uma PR, rode `python3 scripts/audit-kb.py`. A auditoria verifica frontmatter
+estrutural, UTF-8 na leitura e links locais. Para limites de dados e resposta a incidentes,
+veja a [política de segurança](.github/SECURITY.md).
 
 ## Uso esperado
 

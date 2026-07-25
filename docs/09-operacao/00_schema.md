@@ -8,6 +8,7 @@ timestamp: 2026-06-23
 related:
   - ../01-base/00_mapa.md
   - ../../type/README.md
+  - 06_interoperabilidade-entre-bases.md
 ---
 
 # Schema da Knowledge Base
@@ -66,6 +67,35 @@ related: []
 ---
 ```
 
+Quando o documento nasce de uma fonte, circula entre bases ou contém material sensível,
+adicione somente os campos operacionais necessários:
+
+```yaml
+---
+id: "event-AAAA-MM-DD-exemplo"
+type: event
+status: reviewed           # raw | reviewed | canonical | publishable | archived
+privacy: private           # private-local | private | restricted | public
+availability: repo-private # local | repo-private | partner-shared | public
+source_refs: []            # fontes consultadas diretamente
+derived_from: []           # origens causais deste artefato
+owner: ""                  # quem responde editorialmente pelo registro
+---
+```
+
+### Distinções que não devem ser comprimidas
+
+- `authority` diz quanto o documento é confiável como referência.
+- `status` diz em que etapa editorial ele está.
+- `privacy` diz quem pode acessar o conteúdo.
+- `availability` diz onde o conteúdo pode ser encontrado ou entregue.
+- `source_refs` registra fontes usadas diretamente.
+- `derived_from` registra causalidade; `related` registra apenas associação contextual.
+
+OCR, resumo e transcrição automática são **derivados técnicos**, não a fonte original nem
+conteúdo canônico. Um documento só ganha `status: canonical` depois de revisão e promoção
+explícitas.
+
 ## Como escolher
 
 | Use **leve** se… | Use **rico** se… |
@@ -76,6 +106,9 @@ related: []
 
 Você pode **migrar gradualmente** de leve para rico: documentos novos primeiro, depois os de
 governança, depois o resto. Não converta tudo de uma vez.
+
+Uma migração gradual também vale para proveniência: aplique primeiro em calls, materiais
+brutos, decisões e documentos que atravessam bases.
 
 ## Tipos (`type`)
 

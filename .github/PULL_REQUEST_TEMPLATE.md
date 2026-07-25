@@ -27,5 +27,8 @@
 
 - [ ] frontmatter presente (`type` no mínimo)
 - [ ] links `related` atualizados
+- [ ] `STATE.md` atualizado quando direção, gate, risco ou frente mudou
+- [ ] fonte canônica e proveniência declaradas quando aplicável
 - [ ] nenhum dado sensível adicionado
 - [ ] sai do `main` atualizado, branch única
+- [ ] `python3 scripts/audit-kb.py` executado

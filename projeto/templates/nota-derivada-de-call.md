@@ -1,16 +1,24 @@
 ---
-type: synthesis
+id: call-AAAA-MM-DD-assunto
+type: call-intake
 title: "Notas e decisões: <call> (AAAA-MM-DD)"
 description: Nota derivada de call — fatos, decisões, inferências, dúvidas e ações.
+status: reviewed
+privacy: private
+availability: repo-private
 tags: [call, nota-derivada]
 timestamp: AAAA-MM-DD
-related:
-  - ./AAAA-MM-DD_call-participantes_assunto_transcricao-bruta.md
+participants: []
+source_refs: []
+distribution_targets: []
+publication_consent: unknown
 ---
 
 # Notas e decisões — <call>
 
-**Data:** AAAA-MM-DD  **Participantes:** <nomes>  **Fonte bruta:** <link para transcrição>
+**Data:** AAAA-MM-DD  **Participantes:** <nomes>  **Fonte bruta:** <ponteiro seguro>
+
+**Fonte canônica deste intake:** <esta base | URL/caminho de outra base>
 
 > Higiene feita? Corrija termos que a transcrição automática errou e anote correções
 > relevantes aqui.
@@ -32,3 +40,7 @@ related:
 
 ## Distribuição
 - insight → `docs/...` (página canônica que recebe o conteúdo)
+
+## Consentimento e circulação
+- **Uso interno:** <permitido/restrito>
+- **Publicação ou uso como case:** <desconhecido/autorizado/negado/parcial>

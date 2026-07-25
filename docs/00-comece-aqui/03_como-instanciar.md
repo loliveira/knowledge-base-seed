@@ -39,16 +39,22 @@ template.
 5. **Escolha o nível de frontmatter.**
    Decida em [`docs/09-operacao/00_schema.md`](../09-operacao/00_schema.md): comece **leve**.
 
-6. **Ative ou apague o que é opcional.**
+6. **Declare o estado inicial.**
+   Preencha o [`STATE.md`](../../STATE.md) com a situação atual, a primeira frente ativa e o
+   próximo gate. Ele deve continuar curto; tarefas detalhadas ficam no backlog.
+
+7. **Ative ou apague o que é opcional.**
    - Vai ingerir calls/transcrições? Mantenha [`projeto/`](../../projeto/). Senão, apague.
    - Trabalha com agentes? Ajuste o [`AGENTS.md`](../../AGENTS.md). Senão, simplifique.
    - Mais de uma camada? Configure a [separação de camadas](../09-operacao/02_separacao-de-camadas.md).
+   - Mais de uma base? Configure a
+     [interoperabilidade](../09-operacao/06_interoperabilidade-entre-bases.md).
 
-7. **Monte suas views.**
+8. **Monte suas views.**
    Em [`views/`](../../views/) crie uma trilha de leitura por público (ver
    [exemplo](../../views/00_comece-por-aqui.md)).
 
-8. **Apague esta pasta.**
+9. **Apague esta pasta.**
    Quando terminar o onboarding, **delete `docs/00-comece-aqui/`** — ela é andaime do
    template, não conteúdo da sua KB. Atualize o `README.md` para falar da *sua* base.
 
@@ -57,6 +63,7 @@ template.
 - [ ] 8 perguntas respondidas e coladas no mapa
 - [ ] `docs/01-base/` preenchido (mapa, tese, léxico, entidades)
 - [ ] `docs/02-conteudo/` com as seções do meu objeto
+- [ ] `STATE.md` com estado, próximo gate e responsável pela revisão
 - [ ] nível de frontmatter escolhido no schema
 - [ ] `projeto/` ativado ou apagado
 - [ ] `AGENTS.md` ajustado ou simplificado

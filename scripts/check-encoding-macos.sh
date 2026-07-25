@@ -16,7 +16,9 @@ done < <(
     '*.html' '*.css' '*.js' '*.ts' '*.py' '*.sh' '*.ps1'
 )
 
-if rg -n 'Ã|Â´|â€™|â€œ|â€|�' \
+# Procura sequencias tipicas de UTF-8 interpretado como Latin-1. Nao use `Ã`
+# isolado: ele tambem e uma letra portuguesa valida em palavras como `NÃO`.
+if rg -n 'Ã¡|Ã©|Ã­|Ã³|Ãº|Ã¢|Ãª|Ã´|Ã£|Ãµ|Ã§|Â´|â€™|â€œ|â€|�' \
   --glob '*.{md,txt,csv,json,yml,yaml,html,css,js,ts,py,sh,ps1}' \
   --glob '!**/codificacao.md' \
   --glob '!**/CODIFICACAO.md' \
