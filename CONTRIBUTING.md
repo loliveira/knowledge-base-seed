@@ -9,7 +9,7 @@ evita branches empilhadas e conflitos. Se precisa só do fluxo de Git, veja o
 ## Fluxo
 
 1. `git switch main && git pull --ff-only`
-2. criar **uma** branch (prefixo de autor/agente: `claude/*`, `codex/*`, `<nome>/*`)
+2. criar **uma** branch (prefixo de autor/agente: `claude/*` ou `<nome>/*`)
 3. editar ou criar Markdown
 4. manter o frontmatter (ver schema abaixo)
 5. atualizar os links `related` afetados
@@ -20,21 +20,27 @@ evita branches empilhadas e conflitos. Se precisa só do fluxo de Git, veja o
 
 ## Frontmatter
 
-A convenção padrão é **OKF leve** — só `type` é obrigatório:
+Esta base adota o **schema rico**. Campos mínimos em todo documento de `docs/`, `views/` e
+`STATE.md`:
 
 ```yaml
 ---
+id: "kb.area.nome"
 type: ""
 title: ""
-description: ""
+summary: ""
+status: draft          # draft | active | reference | deprecated
+authority: reference   # canonical | reference | derived
+audience: [equipe, agentes]
+owner: ""
+last_reviewed: ""      # AAAA-MM-DD
 tags: []
-timestamp: ""   # AAAA-MM-DD
 related: []
 ---
 ```
 
-Para KB institucional há o **schema rico** opcional (com `authority`, `audience`, `status`,
-`owner`…). Os dois níveis estão em [docs/09-operacao/00_schema.md](./docs/09-operacao/00_schema.md).
+A convenção completa, com os campos operacionais de proveniência e privacidade, está em
+[docs/09-operacao/00_schema.md](./docs/09-operacao/00_schema.md).
 
 ## Agentes de IA
 

@@ -1,34 +1,40 @@
 ---
+id: "kb.conteudo.mapa"
 type: map
+category: content
 title: Mapa de conteúdo
-description: Onde mora o conhecimento do objeto. Você define as seções desta pasta.
+summary: Onde mora o conhecimento do objeto. Você define as seções desta pasta.
+status: active
+authority: canonical
+audience: [equipe, agentes]
+owner: Juliana Valderrama
+last_reviewed: 2026-10-24
 tags: [mapa, conteudo]
-timestamp: 2026-06-23
 related:
   - ../01-base/00_mapa.md
 ---
-
 # Mapa de conteúdo
 
-Esta é a pasta onde vive o conhecimento do **seu objeto**. Diferente de `01-base/` (a
-fundação) e `09-operacao/` (a governança da base), aqui o conteúdo varia conforme o que a KB
-representa.
+Esta é a pasta onde vive o conhecimento da **Physiolabs**. Diferente de `01-base/` (a
+fundação) e `09-operacao/` (a governança da base), aqui mora o que a equipe sabe e assumiu
+sobre o próprio trabalho.
 
-## Crie as suas seções
+## Seções
 
-Crie uma subpasta por grande área do seu objeto. Cada subpasta começa com um `00_mapa.md`
-próprio listando seus arquivos. Exemplos por tipo de KB:
-
-| Tipo de KB | Seções típicas em `02-conteudo/` |
+| Seção | O que entra |
 | --- | --- |
-| Empresa | `produtos/`, `tecnologia/`, `mensagens/`, `casos/` |
-| Curso | `programa/`, `conceitos/`, `materiais/`, `referencias/` |
-| Home-lab / pessoal | `infra/`, `servicos/`, `acervo/`, `rotina/` |
-| Cliente / consultoria | `contexto/`, `decisoes/`, `entregaveis/` |
+| [Fisioterapia](fisioterapia/00_mapa.md) | conhecimento clínico e operacional da prática: abordagens, protocolos, fluxos de atendimento, critérios e referências |
+
+Novas seções entram por PR, cada uma com seu `00_mapa.md`, e são listadas aqui.
+
+## Limite
+
+Nenhum documento desta pasta descreve um paciente real. Caso clínico só entra como
+protocolo ou critério geral, sem dado identificável. Ver [política de segurança](../../.github/SECURITY.md).
 
 ## Regra de uma seção boa
 
 - tem um `00_mapa.md` que lista o que há nela e em que ordem ler;
 - cada arquivo tem frontmatter com `type` (ver [schema](../09-operacao/00_schema.md));
 - links relativos entre arquivos relacionados;
-- nada de dado bruto sensível — isso fica fora do Git.
+- nada de dado bruto sensível nem de prontuário — isso fica fora do Git.

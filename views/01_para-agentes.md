@@ -1,13 +1,17 @@
 ---
+id: "kb.views.para-agentes"
 type: view
+category: views
 title: Para agentes
-description: Trilha de leitura para um agente de IA que vai consumir ou editar a base.
+summary: Trilha de leitura para um agente de IA que vai consumir ou editar a base.
+status: active
+authority: reference
 audience: [agentes]
-timestamp: 2026-06-23
+owner: Juliana Valderrama
+last_reviewed: 2026-10-24
 related:
   - ../AGENTS.md
 ---
-
 # Para agentes
 
 Trilha de prioridade para um agente que precisa de contexto rápido e confiável.

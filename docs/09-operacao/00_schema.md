@@ -1,24 +1,32 @@
 ---
+id: "kb.operacao.schema"
 type: schema
+category: operations
 title: Schema da Knowledge Base
-description: Convenção de frontmatter — OKF leve como padrão, schema rico como modo avançado.
-tags: [schema, frontmatter, okf, governanca]
+summary: Convenção de frontmatter — OKF leve como padrão, schema rico como modo avançado.
+status: active
+authority: canonical
+audience: [equipe, agentes]
+owner: Juliana Valderrama
+last_reviewed: 2026-10-24
 resource: https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf
-timestamp: 2026-06-23
+tags: [schema, frontmatter, okf, governanca]
 related:
   - ../01-base/00_mapa.md
   - ../../type/README.md
   - 06_interoperabilidade-entre-bases.md
 ---
-
 # Schema da Knowledge Base
 
 Todo documento estrutural começa com um bloco de **frontmatter** YAML. Ele torna a base
 buscável, filtrável e consumível por agentes sem perder a simplicidade do Markdown.
 
-Há dois níveis. **Comece pelo leve.** Enriqueça só quando a dor aparecer.
+Há dois níveis. **Esta base adota o nível rico** (decisão fundadora, ver
+[mapa](../01-base/00_mapa.md)): KB institucional, lida pela equipe e por agentes, onde importa
+saber a autoridade, o público e o ciclo de vida de cada documento. O nível leve fica descrito
+como referência do formato de origem.
 
-## Nível 1 — OKF leve (padrão recomendado)
+## Nível 1 — OKF leve (referência)
 
 Inspirado no [Open Knowledge Format](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf).
 **Único campo obrigatório: `type`.** Os demais são recomendados.
@@ -42,10 +50,11 @@ Regras:
 - `resource:` para apontar URL, repo ou sistema externo relacionado.
 - **nunca** coloque segredos, tokens, chaves, saldos ou dados privados no frontmatter.
 
-## Nível 2 — Schema rico (modo avançado, opcional)
+## Nível 2 — Schema rico (nível adotado nesta base)
 
-Para KB institucional consumida por vários agentes, onde importa rastrear autoridade,
-público-alvo e ciclo de vida de cada documento. Adicione ao bloco leve:
+Todo documento em `docs/`, `views/` e `STATE.md` usa este bloco. Campos mínimos
+obrigatórios: `id`, `type`, `title`, `status`, `authority`, `audience`, `owner`,
+`last_reviewed`.
 
 ```yaml
 ---

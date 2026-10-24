@@ -1,16 +1,21 @@
 ---
+id: "kb.operacao.interoperabilidade-entre-bases"
 type: procedure
+category: operations
 title: Interoperabilidade entre bases
-description: Como bases e repositórios trocam contexto sem duplicar fontes de verdade.
+summary: Como bases e repositórios trocam contexto sem duplicar fontes de verdade.
+status: reference
+authority: reference
+audience: [equipe, agentes]
+owner: Juliana Valderrama
+last_reviewed: 2026-10-24
 tags: [interoperabilidade, canonicalidade, handoff, multiplas-bases]
-timestamp: 2026-07-25
 related:
   - ../01-base/03_entidades.md
   - 00_schema.md
   - 02_separacao-de-camadas.md
   - ../../projeto/templates/handoff.md
 ---
-
 # Interoperabilidade entre bases
 
 > Use este módulo somente quando a KB conversa com outros repositórios, bases ou camadas.

@@ -1,11 +1,14 @@
 # Instruções para agentes
 
-> Ajuste este arquivo ao seu objeto ao instanciar a KB. Se nenhum agente de IA escreve na sua
-> base, você pode simplificá-lo ou removê-lo.
-
-Este repositório é uma Knowledge Base versionada em Markdown. Agentes devem preservar a
-diferença entre **material bruto**, **contexto de trabalho**, **decisão aprovada** e
+Este repositório é a Knowledge Base privada da Physiolabs, empresa de fisioterapia, versionada em
+Markdown e mantida pela equipe com apoio do Claude (Claude Code). A base tem **uma camada
+só**: tudo o que entra em `docs/` é conhecimento assumido pela equipe. Agentes devem preservar
+a diferença entre **material bruto**, **contexto de trabalho**, **decisão aprovada** e
 **conteúdo canônico**.
+
+**Limite absoluto:** dados de prontuário e qualquer dado de saúde identificável de paciente
+nunca entram no Git, nem em transcrição, nota, exemplo ou teste. Na dúvida, não escreva e
+pergunte.
 
 ## Leitura inicial obrigatória
 
@@ -13,7 +16,7 @@ diferença entre **material bruto**, **contexto de trabalho**, **decisão aprova
 2. [STATE.md](STATE.md) — estado atual, próximo gate, riscos e frentes sem movimento
 3. [docs/01-base/00_mapa.md](docs/01-base/00_mapa.md) — as decisões fundadoras da base
 4. [docs/09-operacao/00_schema.md](docs/09-operacao/00_schema.md) — convenção de frontmatter
-5. [docs/09-operacao/02_separacao-de-camadas.md](docs/09-operacao/02_separacao-de-camadas.md) — o que pode subir de camada
+5. [.github/SECURITY.md](.github/SECURITY.md) — o que nunca entra no Git
 6. Se houver operação viva: [projeto/README.md](projeto/README.md), o log e o handoff mais recentes.
 
 ## Hierarquia de confiança
@@ -31,11 +34,13 @@ diferença entre **material bruto**, **contexto de trabalho**, **decisão aprova
 - Em notas derivadas, separar **fatos, decisões, inferências, dúvidas e ações**.
 - Preservar a transcrição bruta; correções relevantes vão descritas na nota derivada.
 - Atualizar primeiro a fonte canônica, depois seus derivados.
-- Trabalhar em **branch própria** (prefixo `claude/*`, `codex/*`, …) e entregar por **Pull
-  Request**, sem merge.
+- Trabalhar em **branch própria** com prefixo `claude/*` e entregar por **Pull Request**,
+  sem merge.
 - Declarar o modelo: trailer `Co-Authored-By:` no commit e seção "Modelo / Agente" na PR.
+- Usar o **schema rico** de frontmatter em todo documento novo ou editado (ver
+  [schema](docs/09-operacao/00_schema.md)).
 - Antes de encerrar uma rodada com trabalho inacabado: atualizar log, backlog e handoff.
-- Nunca commitar segredos, dados pessoais brutos ou informação sensível.
+- Nunca commitar segredos, dados de prontuário, dados pessoais brutos ou informação sensível.
 
 ## Ritual de sessão
 

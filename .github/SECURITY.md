@@ -1,10 +1,14 @@
 # Segurança da Knowledge Base
 
-Esta base pode reunir contexto pessoal, profissional e operacional. Repositório privado não
-é autorização para versionar qualquer material.
+Esta base é privada e reúne contexto operacional de uma empresa que lida com dados de
+saúde. Repositório privado não é autorização para versionar qualquer material: dado de
+paciente é tratado como dado sensível (LGPD, art. 11) e fica fora do Git em qualquer forma.
 
 ## Nunca versionar
 
+- **dados de prontuário** e qualquer dado de saúde identificável de paciente (nome,
+  diagnóstico, exame, prescrição, evolução, agendamento), inclusive em exemplos, testes,
+  prints ou transcrições de call;
 - senhas, tokens, chaves, cookies, códigos de recuperação ou URLs com credenciais;
 - arquivos `.env` com valores reais;
 - exports brutos, gravações ou transcrições sensíveis sem necessidade e consentimento;

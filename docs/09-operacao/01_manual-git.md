@@ -1,14 +1,19 @@
 ---
+id: "kb.operacao.manual-git"
 type: procedure
+category: operations
 title: Manual de Git (6 comandos)
-description: Fluxo mínimo de Git para contribuir sem empilhar branches.
+summary: Fluxo mínimo de Git para contribuir sem empilhar branches.
+status: active
+authority: canonical
+audience: [equipe, agentes]
+owner: Juliana Valderrama
+last_reviewed: 2026-10-24
 tags: [git, contribuicao, fluxo]
-timestamp: 2026-06-23
 related:
   - ../../CONTRIBUTING.md
   - 03_colaboracao-com-modelos.md
 ---
-
 # Manual de Git (6 comandos)
 
 O fluxo mínimo para uma contribuição limpa. **Regra de ouro: uma sessão = uma branch = uma
@@ -26,7 +31,7 @@ gh pr create --fill                           # 6. abra a PR (sem merge — quem
 ## Convenção de prefixo de branch
 
 Quando mais de uma pessoa ou agente contribui, prefixe a branch com o autor para evitar
-colisões: `claude/*`, `codex/*`, `<nome>/*`. Veja
+colisões: `claude/*` para o agente, `<nome>/*` para pessoas. Veja
 [colaboração com modelos](03_colaboracao-com-modelos.md).
 
 ## Dica: rituais de sessão

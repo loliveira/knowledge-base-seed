@@ -1,6 +1,6 @@
 # Codificação
 
-O Home Lab usa UTF-8 como codificação padrão para arquivos de texto.
+Esta base usa UTF-8 como codificação padrão para arquivos de texto.
 
 ## Regra prática
 

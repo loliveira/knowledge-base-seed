@@ -1,18 +1,23 @@
 ---
+id: "kb.operacao.separacao-de-camadas"
 type: procedure
+category: operations
 title: Separação de camadas e regra de promoção
-description: Quando uma KB alimenta outra — o que fica, o que sobe, o que vira ação.
+summary: Quando uma KB alimenta outra — o que fica, o que sobe, o que vira ação.
+status: reference
+authority: reference
+audience: [equipe, agentes]
+owner: Juliana Valderrama
+last_reviewed: 2026-10-24
 tags: [camadas, governanca, promocao]
-timestamp: 2026-06-23
 related:
-  - ../00-comece-aqui/01_perguntas-fundamentais.md
+  - ../01-base/00_mapa.md
   - 04_sistema-operacional.md
 ---
-
 # Separação de camadas e regra de promoção
 
-> Pule este documento se a sua KB tem **uma camada só**. Ele importa quando a sua base
-> **alimenta outra** — por exemplo, uma camada operacional privada que promove conhecimento
+> A KB Physiolabs tem **uma camada só**, então este documento não se aplica hoje. Fica como
+> referência para o caso de a base passar a **alimentar outra** — por exemplo, uma camada operacional privada que promove conhecimento
 > para uma camada institucional compartilhável.
 
 Esta é uma das lições mais úteis aprendidas operando KBs reais: nem tudo que você escreve

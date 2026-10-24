@@ -1,17 +1,22 @@
 ---
+id: "kb.base.lexico"
 type: glossary
+category: core
 title: Léxico
-description: Os termos próprios do objeto e o que cada um significa aqui dentro.
+summary: Os termos próprios do objeto e o que cada um significa aqui dentro.
+status: draft
+authority: canonical
+audience: [equipe, agentes]
+owner: Juliana Valderrama
+last_reviewed: 2026-10-24
 tags: [lexico, glossario, linguagem]
-timestamp: 2026-06-23
 related:
   - 00_mapa.md
   - 03_entidades.md
 ---
+# Léxico da Physiolabs
 
-# Léxico
-
-> Palavras que você usa de um jeito específico. Definir o léxico evita que duas pessoas (ou
+> Palavras que a equipe usa de um jeito específico. Definir o léxico evita que duas pessoas (ou
 > dois agentes) entendam o mesmo termo de formas diferentes. Mantenha curto e vivo.
 
 ## Termos

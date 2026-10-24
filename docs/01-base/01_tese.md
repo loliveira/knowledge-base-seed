@@ -1,20 +1,26 @@
 ---
+id: "kb.base.tese"
 type: thesis
+category: core
 title: Tese
-description: A ideia central que organiza tudo nesta base.
+summary: A ideia central que organiza tudo nesta base.
+status: draft
+authority: canonical
+audience: [equipe, agentes]
+owner: Juliana Valderrama
+last_reviewed: 2026-10-24
 tags: [tese, fundacao]
-timestamp: 2026-06-23
 related:
   - 00_mapa.md
 ---
+# Tese da Physiolabs
 
-# Tese
-
-> A tese é a frase que, se mudasse, mudaria tudo o que está nesta KB. Escreva-a primeiro.
+> A tese é a frase que, se mudasse, mudaria tudo o que está nesta KB.
+> **Pendente de aprovação da owner** — ver [STATE.md](../../STATE.md).
 
 ## Em uma frase
 
-<A ideia central do seu objeto, em uma frase memorável.>
+<A ideia central da Physiolabs, em uma frase memorável — pendente.>
 
 ## Por extenso
 
