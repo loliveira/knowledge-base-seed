@@ -1,15 +1,20 @@
 ---
+id: "kb.operacao.ingestao-de-calls"
 type: procedure
+category: operations
 title: Ingestão de calls
-description: Como uma reunião ou transcrição entra na base sem virar bagunça.
+summary: Como uma reunião ou transcrição entra na base sem virar bagunça.
+status: active
+authority: canonical
+audience: [equipe, agentes]
+owner: Juliana Valderrama
+last_reviewed: 2026-10-24
 tags: [calls, ingestao, transcricao]
-timestamp: 2026-06-23
 related:
   - 04_sistema-operacional.md
   - ../../scripts/nova-ingestao.sh
   - ../../projeto/templates/nota-derivada-de-call.md
 ---
-
 # Ingestão de calls
 
 Convenção para transformar uma reunião em conhecimento útil, preservando a fonte e

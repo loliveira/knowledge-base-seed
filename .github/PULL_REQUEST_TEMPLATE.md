@@ -20,15 +20,15 @@
 > Quem produziu esta contribuição.
 
 - **Autor:** <humano / agente>
-- **Modelo (se IA):** <ex.: Claude Opus 4.8 — claude-opus-4-8>
+- **Modelo (se IA):** <ex.: Claude Fable 5.1 — claude-fable-5-1>
 - Commit traz trailer `Co-Authored-By:`? <sim/não>
 
 ## Checklist
 
-- [ ] frontmatter presente (`type` no mínimo)
+- [ ] frontmatter rico presente (`id`, `type`, `status`, `authority`, `audience`, `owner`, `last_reviewed`)
 - [ ] links `related` atualizados
 - [ ] `STATE.md` atualizado quando direção, gate, risco ou frente mudou
 - [ ] fonte canônica e proveniência declaradas quando aplicável
-- [ ] nenhum dado sensível adicionado
+- [ ] nenhum dado sensível adicionado — em especial, nenhum dado de paciente ou prontuário
 - [ ] sai do `main` atualizado, branch única
 - [ ] `python3 scripts/audit-kb.py` executado

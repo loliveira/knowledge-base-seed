@@ -1,8 +1,5 @@
 # Operação do projeto
 
-> **Pasta opcional.** Ative se a sua KB ingere material vivo (calls, transcrições, decisões em
-> andamento). Se não, **apague `projeto/` inteira** ao instanciar.
-
 Esta é a porta de entrada do contexto **vivo** da base. Material bruto entra aqui, decisões
 amadurecem aqui, e só o que foi validado é promovido para a camada canônica
 (`docs/`).
@@ -29,3 +26,10 @@ operacional: fila, decisões, logs, handoffs e materiais de entrada.
 
 Material bruto entra aqui. Decisões amadurecem aqui. Apenas o validado é promovido para
 `docs/`.
+
+## Privacidade
+
+Transcrição de call que contenha dado de paciente (nome, caso clínico, exame, agendamento)
+**não entra no Git**: fica no armazenamento controlado da empresa e é referenciada por
+ponteiro seguro. A nota derivada entra anonimizada, sem identificar paciente. Ver
+[política de segurança](../.github/SECURITY.md).

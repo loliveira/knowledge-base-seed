@@ -1,13 +1,17 @@
 ---
+id: "kb.views.comece-por-aqui"
 type: view
+category: views
 title: Começar por aqui
-description: Trilha de leitura para quem está chegando agora.
+summary: Trilha de leitura para quem está chegando agora.
+status: active
+authority: reference
 audience: [novo-leitor, humano]
-timestamp: 2026-06-23
+owner: Juliana Valderrama
+last_reviewed: 2026-10-24
 related:
   - ../docs/01-base/00_mapa.md
 ---
-
 # Começar por aqui
 
 > Uma **view** é uma trilha de leitura, não uma pasta. Ela atravessa a estrutura para entregar

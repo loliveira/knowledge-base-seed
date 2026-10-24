@@ -1,20 +1,25 @@
 ---
+id: "kb.operacao.sistema-operacional"
 type: procedure
+category: operations
 title: Sistema operacional do projeto
-description: Como conversas, materiais e decisões viram contexto acumulativo na base.
+summary: Como conversas, materiais e decisões viram contexto acumulativo na base.
+status: active
+authority: canonical
+audience: [equipe, agentes]
+owner: Juliana Valderrama
+last_reviewed: 2026-10-24
 tags: [operacao, ingestao, fluxo, projeto]
-timestamp: 2026-06-23
 related:
   - 05_ingestao-de-calls.md
   - ../../projeto/README.md
   - 02_separacao-de-camadas.md
 ---
-
 # Sistema operacional do projeto
 
-> Ative isto se a sua KB **ingere material vivo** — calls, transcrições, decisões em
-> andamento. Ele transforma entrada bruta em conhecimento consolidado, sem perder
-> proveniência. A estrutura mora em [`projeto/`](../../projeto/).
+> Esta base **ingere material vivo** — calls, transcrições, decisões em andamento. Este
+> fluxo transforma entrada bruta em conhecimento consolidado, sem perder proveniência. A
+> estrutura mora em [`projeto/`](../../projeto/).
 
 ## Fluxo principal
 

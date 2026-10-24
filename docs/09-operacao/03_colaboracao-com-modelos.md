@@ -1,18 +1,23 @@
 ---
+id: "kb.operacao.colaboracao-com-modelos"
 type: procedure
+category: operations
 title: Colaboração com modelos
-description: Como múltiplos agentes de IA contribuem para a base com autoria rastreável.
+summary: Como múltiplos agentes de IA contribuem para a base com autoria rastreável.
+status: active
+authority: canonical
+audience: [equipe, agentes]
+owner: Juliana Valderrama
+last_reviewed: 2026-10-24
 tags: [agentes, ia, colaboracao, autoria]
-timestamp: 2026-06-23
 related:
   - ../../AGENTS.md
   - 01_manual-git.md
 ---
-
 # Colaboração com modelos
 
-> Pule se nenhum agente de IA escreve na sua base. Importa quando **um ou mais modelos**
-> (Claude, Codex, etc.) contribuem — e você quer saber quem produziu o quê.
+> Nesta base, o único agente que escreve é o Claude (Claude Code). O protocolo abaixo vale
+> para ele e para qualquer modelo que venha a ser adicionado ao registro.
 
 ## Protocolo de identificação de modelo
 
@@ -20,11 +25,11 @@ Toda contribuição feita por um agente declara o modelo em três camadas:
 
 1. **Trailer no commit:**
    ```
-   Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+   Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
    ```
 2. **Seção "Modelo / Agente" no corpo da PR** (ver
    [PULL_REQUEST_TEMPLATE](../../.github/PULL_REQUEST_TEMPLATE.md)).
-3. **Prefixo de branch** opcional: `claude/*`, `codex/*`, `<agente>/*`.
+3. **Prefixo de branch:** `claude/*` (ou `<agente>/*` para um modelo novo no registro).
 
 ## Por que
 
@@ -38,8 +43,7 @@ Mantenha abaixo a lista de agentes que interagem com esta KB e como.
 
 | Agente | Modelo / versão | Prefixo de branch | Papel |
 | --- | --- | --- | --- |
-| <ex.: Claude> | <claude-opus-4-8> | `claude/*` | <edição, ingestão, revisão> |
-| <ex.: Codex> | <gpt-5> | `codex/*` | <...> |
+| Claude (Claude Code) | Claude Fable 5.1 — `claude-fable-5-1` | `claude/*` | edição, ingestão, revisão, manutenção da base |
 
 ## Regras de trabalho dos agentes
 

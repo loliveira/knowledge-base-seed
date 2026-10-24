@@ -1,25 +1,32 @@
 ---
+id: "kb.base.entidades"
 type: reference
+category: core
 title: Entidades
-description: Pessoas, produtos, projetos e lugares relevantes ao objeto da KB.
+summary: Pessoas, produtos, projetos e lugares relevantes ao objeto da KB.
+status: draft
+authority: canonical
+audience: [equipe, agentes]
+owner: Juliana Valderrama
+last_reviewed: 2026-10-24
 tags: [entidades, pessoas, projetos]
-timestamp: 2026-06-23
 related:
   - 00_mapa.md
   - 02_lexico.md
 ---
-
 # Entidades e fontes canônicas
 
-> O elenco do seu objeto. Ajuda humanos e agentes a desambiguar nomes, entender quem/o quê
+> O elenco da Physiolabs. Ajuda humanos e agentes a desambiguar nomes, entender quem/o quê
 > está em jogo e localizar onde cada mudança deve ser feita.
 
-> **Atenção à privacidade:** se a base é pública ou semi-pública, não inclua dados sensíveis
-> de pessoas. Veja a regra de privacidade no seu [mapa](00_mapa.md).
+> **Atenção à privacidade:** pacientes nunca aparecem aqui, nem como exemplo. Pessoas da
+> equipe entram só com nome e papel. Veja a regra de privacidade no [mapa](00_mapa.md).
 
 ## Pessoas
 
-- **<Nome>** — <papel; o que faz; relação com o objeto>
+- **Juliana Valderrama** — owner da KB; aprova PRs, decide promoções e responde pelo
+  conteúdo canônico.
+- **<Nome>** — <papel; o que faz; relação com a Physiolabs>
 
 ## Projetos / frentes
 

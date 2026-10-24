@@ -1,15 +1,18 @@
 ---
+id: "kb.state"
 type: state
+category: core
 title: Estado atual
-description: Leitura operacional curta da KB — frentes, decisões vigentes, próximo gate e lacunas.
+summary: Leitura operacional curta da KB Physiolabs — frentes, decisões vigentes, próximo gate e lacunas.
 status: active
-owner: "<responsável pela base>"
-timestamp: AAAA-MM-DD
+authority: canonical
+audience: [equipe, agentes]
+owner: Juliana Valderrama
+last_reviewed: 2026-10-24
 related:
   - docs/01-base/00_mapa.md
   - projeto/README.md
 ---
-
 # Estado atual
 
 > Atualize este arquivo quando mudar a direção da base. Ele não substitui backlog nem log:
@@ -17,25 +20,40 @@ related:
 
 ## Em uma frase
 
-<qual é a situação atual da base ou do objeto>
+A KB Physiolabs está instanciada, com tese aprovada ("fisioterapia baseada em evidência"),
+governança e regras de privacidade definidas; a seção Fisioterapia ainda não tem notas.
 
 ## Frentes ativas
 
-- **<frente>** — <estado observável> — próximo gate: <marco ou decisão>
+- **Instanciação da base** — oito decisões fundadoras e tese no lugar; schema rico,
+  AGENTS.md e política de segurança ajustados — próximo gate: merge da PR de instanciação
+  pela owner.
+- **Fisioterapia** — seção criada com mapa e critérios de entrada, sem notas — próximo gate:
+  primeira nota de conteúdo (abordagem, protocolo ou fluxo de atendimento) por PR.
 
 ## Decisões vigentes
 
-- <decisão que limita ou orienta o trabalho atual>
+- Tese: a Physiolabs atua na fisioterapia baseada em evidência. Conduta registrada tem
+  origem e sustentação declaradas; sem isso, fica em `projeto/`.
+- Base privada, de camada única, mantida só por Pull Request; merge pela owner.
+- Dado de prontuário e de paciente identificável nunca entra no Git, nem em exemplo ou
+  transcrição; nota derivada de call entra anonimizada.
+- Frontmatter rico obrigatório em `docs/`, `views/` e `STATE.md`.
+- Claude (Claude Code) é o único agente que escreve, em branches `claude/*`.
 
 ## Riscos e bloqueios
 
-- <risco, dependência ou bloqueio>
+- A tese exige origem e sustentação em cada protocolo; sem disciplina na primeira ingestão,
+  a seção Fisioterapia pode nascer com conduta sem referência.
+- Léxico e entidades ainda são esqueleto: termos clínicos e papéis da equipe não foram
+  definidos, o que pode gerar ambiguidade na primeira ingestão de call.
 
 ## Sem movimento
 
-- **<frente>** — sem sinal desde <data>; esperando <pessoa, evento ou decisão>
+- **Ingestão de calls** — fluxo pronto em `projeto/`, nenhuma call ingerida; esperando a
+  primeira reunião da equipe a registrar.
 
 ## Próxima revisão
 
-- **Data ou gatilho:** <AAAA-MM-DD ou evento>
-- **Responsável:** <nome>
+- **Data ou gatilho:** merge da PR de instanciação ou primeira nota em Fisioterapia
+- **Responsável:** Juliana Valderrama

@@ -22,6 +22,8 @@ publication_consent: unknown
 
 > Higiene feita? Corrija termos que a transcrição automática errou e anote correções
 > relevantes aqui.
+>
+> Anonimização feita? Nenhum nome, caso ou dado de paciente pode aparecer nesta nota.
 
 ## Fatos
 - <o que é objetivamente verdade, com trecho/timestamp se importar>
