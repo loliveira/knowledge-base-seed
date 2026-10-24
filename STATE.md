@@ -20,18 +20,21 @@ related:
 
 ## Em uma frase
 
-A KB Physiolabs acabou de ser instanciada: governança, estrutura e regras de privacidade
-estão definidas, mas a tese ainda não foi aprovada e a seção Fisioterapia está vazia.
+A KB Physiolabs está instanciada, com tese aprovada ("fisioterapia baseada em evidência"),
+governança e regras de privacidade definidas; a seção Fisioterapia ainda não tem notas.
 
 ## Frentes ativas
 
-- **Instanciação da base** — oito decisões fundadoras registradas no mapa; schema rico,
-  AGENTS.md e política de segurança ajustados — próximo gate: aprovação da tese pela owner.
+- **Instanciação da base** — oito decisões fundadoras e tese no lugar; schema rico,
+  AGENTS.md e política de segurança ajustados — próximo gate: merge da PR de instanciação
+  pela owner.
 - **Fisioterapia** — seção criada com mapa e critérios de entrada, sem notas — próximo gate:
   primeira nota de conteúdo (abordagem, protocolo ou fluxo de atendimento) por PR.
 
 ## Decisões vigentes
 
+- Tese: a Physiolabs atua na fisioterapia baseada em evidência. Conduta registrada tem
+  origem e sustentação declaradas; sem isso, fica em `projeto/`.
 - Base privada, de camada única, mantida só por Pull Request; merge pela owner.
 - Dado de prontuário e de paciente identificável nunca entra no Git, nem em exemplo ou
   transcrição; nota derivada de call entra anonimizada.
@@ -40,7 +43,8 @@ estão definidas, mas a tese ainda não foi aprovada e a seção Fisioterapia es
 
 ## Riscos e bloqueios
 
-- Sem tese aprovada, a base não tem o critério que decide o que é relevante ao conteúdo.
+- A tese exige origem e sustentação em cada protocolo; sem disciplina na primeira ingestão,
+  a seção Fisioterapia pode nascer com conduta sem referência.
 - Léxico e entidades ainda são esqueleto: termos clínicos e papéis da equipe não foram
   definidos, o que pode gerar ambiguidade na primeira ingestão de call.
 
@@ -51,5 +55,5 @@ estão definidas, mas a tese ainda não foi aprovada e a seção Fisioterapia es
 
 ## Próxima revisão
 
-- **Data ou gatilho:** aprovação da tese ou primeira nota em Fisioterapia, o que vier antes
+- **Data ou gatilho:** merge da PR de instanciação ou primeira nota em Fisioterapia
 - **Responsável:** Juliana Valderrama

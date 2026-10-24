@@ -25,8 +25,8 @@ related:
 > Respostas às oito perguntas fundamentais do template de origem. Este bloco é o contrato da
 > KB: mudar uma resposta é mudar a base, e exige PR aprovada pela owner.
 
-- **Objeto:** a Physiolabs, empresa de fisioterapia — o que ela é, como opera e o que já
-  assumiu como conhecimento próprio.
+- **Objeto:** a Physiolabs, empresa de fisioterapia baseada em evidência — o que ela é, como
+  opera e o que já assumiu como conhecimento próprio (ver [tese](01_tese.md)).
 - **Públicos:** a equipe da empresa; agentes de IA que leem e escrevem na base.
 - **Camadas:** uma camada só. Tudo o que entra aqui é conhecimento assumido pela equipe.
 - **Privacidade:** privado. **Nunca entra:** dados de prontuário e qualquer dado de saúde
